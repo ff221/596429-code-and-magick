@@ -40,7 +40,7 @@ window.renderStatistics = function (ctx, names, times) {
   };
 
   var setHistogramFillStyle = function (name) {
-    name === 'Вы' ? ctx.fillStyle = 'rgba(255, 0, 0, 1)' : ctx.fillStyle = 'rgba(0, 0, 255,' + getRandomNumber(0.1, 1) + ')';
+    ctx.fillStyle = name === 'Вы' ? 'rgba(255, 0, 0, 1)' : 'rgba(0, 0, 255,' + getRandomNumber(0.1, 1) + ')';
   };
 
   var drawRectangeOfHistogram = function (caption, value, number) {
